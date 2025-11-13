@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Inserir Título</title>
+    <script>
+        function inserirTitulo() {
+            const campo = document.getElementById("txt-titulo");
+            const titulo = document.getElementById("titulo");
+            titulo.textContent = campo.value; 
+        }
+    </script>
+</head>
+<body>
+
+    <h1 id="titulo"></h1>
+
+    <input type="text" id="txt-titulo" placeholder="Digite um título">
+
+    <button onclick="inserirTitulo()">Clique aqui</button>
+
+</body>
+</html>
